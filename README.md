@@ -1,16 +1,31 @@
-This is a Medium style Jekyll theme for anyone who want to create their website or Blog that look like Medium - a platform for people to read, write and share stories that matter. 
+# Hae jeong's Blog
 
-# Mekyll (Beta version)
-Medium style Jekyll theme.     
-[Demo...](https://ifedyukin.github.io/Mekyll)    
----
-![Screenshot](./screenshot.png)
+공부한 내용을 기록하는 블로그 — https://907hza.github.io
 
-We are still developing this style theme. 
-If you want to get involved, simply:
+[Stellar](https://github.com/ekmas/stellar) (Astro) 테마 기반
 
-* Fork the project and create a new branch;
-* Create an issue (optional);
-* Raise a 'Pull Request' citing the issue (if any) with that branch to merge into this master branch!   
+## 로컬 실행
 
-You can offer any improvement to the theme - [Issue #3](https://github.com/ifedyukin/Mekyll/issues/3).
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # 배포 전 빌드 확인
+```
+
+## 글 추가하는 법
+
+1. `src/pages/ko/` 아래에 `.mdx` 파일을 만든다 (예: `src/pages/ko/spring/spring-mvc.mdx`)
+
+   ```mdx
+   ---
+   layout: '@/layouts/Markdown.astro'
+   title: Spring MVC 정리
+   description: 요청이 처리되는 흐름
+   ---
+
+   ## 본문 제목
+
+   내용...
+   ```
+
+2. `src/i18n/sidebar.ts`에 같은 경로로 사이드바 항목을 추가한다 (파일 안 주석 참고)
