@@ -29,3 +29,5 @@ npm run build    # 배포 전 빌드 확인
    ```
 
 2. `src/i18n/sidebar.ts`에 같은 경로로 사이드바 항목을 추가한다 (파일 안 주석 참고)
+
+로드맵 단계별 폴더: `cs-basics`(0) · `programming-sql`(1) · `db-modeling`(2) · `pipeline`(3) · `distributed-streaming`(4) · `cloud-dataops`(5) · `lakehouse-governance`(6) · `ai-data`(7)
