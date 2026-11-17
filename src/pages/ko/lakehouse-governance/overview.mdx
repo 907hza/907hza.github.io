@@ -1,0 +1,20 @@
+---
+layout: '@/layouts/Markdown.astro'
+title: 6단계 · 레이크하우스 · 데이터 품질 · 거버넌스
+description: 테이블 포맷·품질·거버넌스를 함께 설계하는 플랫폼 재설계 단계
+---
+
+플랫폼 재설계 단계입니다. Hive 테이블을 Iceberg로 전환하거나 DW를 S3 기반 레이크로 통합하는 것처럼, 테이블 포맷·품질·거버넌스를 함께 설계합니다.
+
+## 체크리스트
+
+- [ ] **테이블 포맷**: Apache Iceberg(가장 널리 쓰임), Delta Lake, Hudi. ACID, 스키마 진화, 타임트래블, 컴팩션.
+- [ ] **카탈로그**: Hive Metastore, AWS Glue, Polaris/Unity Catalog.
+- [ ] **플랫폼**: Databricks, Snowflake, BigQuery 중 하나 이상 실습.
+- [ ] **데이터 품질**: dbt test, Great Expectations, 데이터 컨트랙트, 정합성 검증 로직.
+- [ ] **거버넌스·보안**: 데이터 카탈로그, 리니지(OpenLineage 등), 접근제어(Ranger), 감사 로그, 개인정보 마스킹·파기 정책.
+- [ ] **비용 최적화**: 파티셔닝·클러스터링, 스토리지 티어, 쿼리 비용 분석.
+
+## 공부 기록
+
+이 단계에서 공부한 내용은 사이드바의 같은 메뉴 아래에 정리합니다.

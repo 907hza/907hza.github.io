@@ -1,0 +1,23 @@
+---
+layout: '@/layouts/Markdown.astro'
+title: 3단계 · 파이프라인과 오케스트레이션
+description: DAG 작성보다 의존성·재처리 구조 설계와 장애 대응
+---
+
+Airflow는 사실상 표준 오케스트레이션 도구입니다. DAG 작성보다 의존성·재처리 구조 설계와 장애 대응에 초점을 둡니다.
+
+## 체크리스트
+
+- [ ] ETL vs ELT, 배치 vs 마이크로배치 vs 스트리밍의 선택 기준.
+- [ ] **Airflow**: DAG 설계, Operator/Sensor, XCom, backfill·catchup, 멱등성 있는 태스크, SLA·알림, KubernetesExecutor/CeleryExecutor 운영.
+- [ ] **대안 도구 인지**: Dagster, Prefect, NiFi, AWS MWAA.
+- [ ] **수집**: DB·API·파일·웹 크롤링 커넥터, Airbyte·SeaTunnel 같은 수집 도구.
+- [ ] **dbt**: 모델·테스트·문서화·증분 모델. 분석 엔지니어링에서는 사실상 필수입니다.
+
+## 포트폴리오 1 · 배치 ELT
+
+공공/금융 API → Airflow → S3(Parquet) → dbt 마트 → BI 대시보드. 멱등성·backfill·품질 테스트 포함.
+
+## 공부 기록
+
+이 단계에서 공부한 내용은 사이드바의 같은 메뉴 아래에 정리합니다.
